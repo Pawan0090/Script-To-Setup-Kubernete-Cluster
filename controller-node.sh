@@ -52,3 +52,6 @@ kubeadm token create
 #command to print the token neeed to past in the worker-nodes
 kubeadm token create --print-join-command
 
+export KUBECONFIG=/etc/kubernetes/admin.conf
+cp /etc/kubernetes/admin.conf .kube/config
+
